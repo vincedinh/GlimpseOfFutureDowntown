@@ -1,0 +1,52 @@
+<!-- Written by Vince Dinh, originally modified from https://threejs.org/manual/#en/fundamentals  -->
+<!-- scene.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Glimpse of Future Downtown</title>
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+      #c {
+        width: 100%;
+        height: 50%;
+        display: block;
+      }
+      .split {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .split>div {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="c" width="1280" height="720"></canvas>
+    <div class="split">
+      <div id="view1" tabindex="1"></div>
+      <div id="view2" tabindex="2"></div>
+    </div>
+    <br>
+    Inspired by Night City (the setting of Cyberpunk 2077)
+    <br>
+    NOTES:
+    <br>
+    - Click, drag or scroll to change camera angle (orbit controls)
+    <br>
+    - Please run a local web server to view the scene
+
+
+    
+  </body>
+<script type="module" src="scene.js"></script>
+</html>
